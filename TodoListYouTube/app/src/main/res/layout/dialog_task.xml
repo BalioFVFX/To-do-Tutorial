@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="20dp"
+    android:background="#3949AB">
+
+    <ImageView
+        android:src="@drawable/ic_lightbulb"
+        android:id="@+id/iv_task_title"
+        android:layout_width="40dp"
+        android:layout_height="40dp" />
+
+    <EditText
+        android:id="@+id/et_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/iv_task_title"
+        android:hint="Task title..."
+        android:layout_toRightOf="@id/iv_task_title"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D5C9C9"/>
+
+    <ImageView
+        android:src="@drawable/ic_info"
+        android:id="@+id/iv_task_description"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/iv_task_title"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/et_task_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_task_title"
+        android:layout_toEndOf="@id/iv_task_description"
+        android:hint="Description..."
+        android:layout_toRightOf="@id/iv_task_description"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#D5C9C9"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_task_description"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        android:paddingBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SAVE"
+            android:background="#2DA7FF"
+            android:layout_toStartOf="@id/btn_cancel"
+            android:layout_toLeftOf="@id/btn_cancel"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp" />
+
+        <Button
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#9870EC"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:text="CANCEL"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
